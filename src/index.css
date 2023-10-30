@@ -66,7 +66,7 @@ h1 {
   margin: auto;
   padding: 0 1rem;
   position: relative;
-  top: 10%;
+  top: 6%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,22 +78,30 @@ h1 {
   margin: 1rem auto;
 }
 
-#stand {
-  position:relative;
-  height:400px;
-  width: 300px;
-  margin-top: 35px;
-}
-
-.app .bottom {
-  display: flex;
-  justify-content: space-evenly;
+.mid{
   text-align: center;
   width: 100%;
+  height:50%;
   margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bottom {
+  text-align: center;
+}
+
+#current{
+  margin-top:50px;
+}
+
+#Attempts{
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+#stand {
+  position:relative;
+  height:350px;
+  width: 250px;
 }
 
 .bold {
@@ -106,10 +114,11 @@ li {
 
 #hangmanBody {
   position:absolute;
-  height:200px;
-  width:200px;
-  margin-left:330px;
-  margin-top:-330px;
+  max-height:300px;
+  height:100%;
+  width:100%;
+  margin-left:80px;
+  margin-top:-290px;
 }
 
 #head {
@@ -153,4 +162,31 @@ li {
   margin-left: -3px;
   height:30px;
   width: 30px;
+}
+
+#winContainer {
+  display:flex;
+  height:400px;
+  width:100%;
+}
+
+#winMessage{
+  display:flex;
+  margin:auto;
+}
+
+.b1 {
+  margin-top:10px;
+  padding: 10px 24px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.b1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.category {
+  margin-top:10px;
 }
